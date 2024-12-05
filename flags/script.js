@@ -1,5 +1,7 @@
 const countries = await fetch('https://raw.githubusercontent.com/hampusborgos/country-flags/refs/heads/main/countries.json').then(res => res.json())
 
+console.log(countries)
+
 const body = document.querySelector('.flags')
 
 function genFlagCard(country) {
